@@ -42,4 +42,4 @@ document.getElementById('clearCart').addEventListener('click',()=>{cart.clear();
 document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.product').forEach(card=>card.classList.toggle('hidden',btn.dataset.filter!=='all'&&card.dataset.cat!==btn.dataset.filter))}));
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});
-</script></body></html>
+</script></body></index.html>
